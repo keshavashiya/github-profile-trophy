@@ -5,16 +5,16 @@
 </p>
 <p align="center">
   <a href="https://github.com/keshavashiya/github-profile-trophy/issues">
-    <img src="https://img.shields.io/github/issues/ryo-ma/github-profile-trophy"/> 
+    <img src="https://img.shields.io/github/issues/keshavashiya/github-profile-trophy"/> 
   </a>
   <a href="https://github.com/keshavashiya/github-profile-trophy/network/members">
-    <img src="https://img.shields.io/github/forks/ryo-ma/github-profile-trophy"/> 
+    <img src="https://img.shields.io/github/forks/keshavashiya/github-profile-trophy"/> 
   </a>  
   <a href="https://github.com/keshavashiya/github-profile-trophy/stargazers">
-    <img src="https://img.shields.io/github/stars/ryo-ma/github-profile-trophy"/> 
+    <img src="https://img.shields.io/github/stars/keshavashiya/github-profile-trophy"/> 
   </a>
     <a href="https://github.com/keshavashiya/github-profile-trophy/LICENSE">
-    <img src="https://img.shields.io/github/license/ryo-ma/github-profile-trophy"/> 
+    <img src="https://img.shields.io/github/license/keshavashiya/github-profile-trophy"/> 
   </a>
 </p>
 
