@@ -34,7 +34,7 @@ Change the `?username=` value to your GitHub's username.
 Add optional parameter of theme.
 
 ```
-[![trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-trophy.vercel.app/?username=keshavashiya&theme=onedark)](https://github.com/keshavashiya/github-profile-trophy)
 ```
 
 <img width="660" src="https://user-images.githubusercontent.com/6661165/92327052-d99b9e00-f091-11ea-9a24-c7ec86982370.png">
@@ -87,7 +87,7 @@ Therefore, if you come up with interesting conditions, I am waiting for contribu
 You can filter the display by specifying the titles of trophy.  
 
 ```
-https://github-profile-trophy.vercel.app/?username=ryo-ma&title=Followers
+https://github-trophy.vercel.app/?username=keshavashiya&title=Followers
 ```
 <img width="110" src="https://user-images.githubusercontent.com/6661165/92317141-80ebe700-f038-11ea-8501-4015bfbb2cf4.png">
 
@@ -95,7 +95,7 @@ https://github-profile-trophy.vercel.app/?username=ryo-ma&title=Followers
 If You want to specify multiple titles.
 
 ```
-https://github-profile-trophy.vercel.app/?username=ryo-ma&title=Stars,Followers
+https://github-trophy.vercel.app/?username=keshavashiya&title=Stars,Followers
 ```
 
 ## Filter by ranks
@@ -104,7 +104,7 @@ You can filter the display by specifying the ranks.
 `Available values: SECRET SSS SS S AAA AA A B C`
 
 ```
-https://github-profile-trophy.vercel.app/?username=ryo-ma&rank=S
+https://github-trophy.vercel.app/?username=keshavashiya&rank=S
 ```
 
 <img width="110" src="https://user-images.githubusercontent.com/6661165/91642657-1cdd8780-ea68-11ea-994b-4568a55cd22a.png" />
@@ -112,7 +112,7 @@ https://github-profile-trophy.vercel.app/?username=ryo-ma&rank=S
 If You want to specify multiple ranks.
 
 ```
-https://github-profile-trophy.vercel.app/?username=ryo-ma&rank=S,AAA
+https://github-trophy.vercel.app/?username=keshavashiya&rank=S,AAA
 ```
 
 ## Specify the maximum row & column size
@@ -125,17 +125,17 @@ Trophy will be hidden if it exceeds the range of both row and column.
 
 Restrict only row
 ```
-https://github-profile-trophy.vercel.app/?username=ryo-ma&row=2
+https://github-trophy.vercel.app/?username=keshavashiya&row=2
 ```
 
 Restrict only column
 ```
-https://github-profile-trophy.vercel.app/?username=ryo-ma&column=2
+https://github-trophy.vercel.app/?username=keshavashiya&column=2
 ```
 
 Restrict row & column
 ```
-https://github-profile-trophy.vercel.app/?username=ryo-ma&row=2&column=3
+https://github-trophy.vercel.app/?username=keshavashiya&row=2&column=3
 ```
 <img width="330" src="https://user-images.githubusercontent.com/6661165/91659474-c07f7400-eb0a-11ea-84f2-eb6b42547829.png">
 
@@ -152,7 +152,7 @@ Available themes.
 ### flat
 
 ```
-https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=flat
+https://github-trophy.vercel.app/?username=keshavashiya&theme=flat
 ```
 
 <img width="660" src="https://user-images.githubusercontent.com/6661165/92325601-039b9300-f087-11ea-983a-fce8133549ee.png">
@@ -160,7 +160,7 @@ https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=flat
 ### onedark
 
 ```
-https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=onedark
+https://github-trophy.vercel.app/?username=keshavashiya&theme=onedark
 ```
 
 <img width="660" src="https://user-images.githubusercontent.com/6661165/92327052-d99b9e00-f091-11ea-9a24-c7ec86982370.png">
@@ -168,7 +168,7 @@ https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=onedark
 ### gruvbox
 
 ```
-https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=gruvbox
+https://github-trophy.vercel.app/?username=keshavashiya&theme=gruvbox
 ```
 
 <img width="660" src="https://user-images.githubusercontent.com/6661165/92315152-e9c56600-f01c-11ea-9536-1bfbb158cfcb.png">
@@ -199,7 +199,7 @@ deno run --allow-net --allow-read --allow-env debug.ts
 
 Open localhost from your browser.
 
-http://localhost:8080/?username=ryo-ma
+http://localhost:8080/?username=keshavashiya
 
 ## Editor config
 
