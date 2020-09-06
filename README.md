@@ -4,16 +4,16 @@
   <p align="center">🏆 Add dynamically generated GitHub Trophy on your readme</p>
 </p>
 <p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy/issues">
+  <a href="https://github.com/keshavashiya/github-profile-trophy/issues">
     <img src="https://img.shields.io/github/issues/ryo-ma/github-profile-trophy"/> 
   </a>
-  <a href="https://github.com/ryo-ma/github-profile-trophy/network/members">
+  <a href="https://github.com/keshavashiya/github-profile-trophy/network/members">
     <img src="https://img.shields.io/github/forks/ryo-ma/github-profile-trophy"/> 
   </a>  
-  <a href="https://github.com/ryo-ma/github-profile-trophy/stargazers">
+  <a href="https://github.com/keshavashiya/github-profile-trophy/stargazers">
     <img src="https://img.shields.io/github/stars/ryo-ma/github-profile-trophy"/> 
   </a>
-    <a href="https://github.com/ryo-ma/github-profile-trophy/LICENSE">
+    <a href="https://github.com/keshavashiya/github-profile-trophy/LICENSE">
     <img src="https://img.shields.io/github/license/ryo-ma/github-profile-trophy"/> 
   </a>
 </p>
@@ -24,10 +24,10 @@ Add following code to your readme.
 Change the `?username=` value to your GitHub's username.
 
 ```
-[![trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-trophy.vercel.app/?username=keshavashiya)](https://github.com/keshavashiya/github-profile-trophy)
 ```
 
-<img src="https://github-profile-trophy.vercel.app/?username=ryo-ma&column=7&rank=SSS,SS,S,AAA,AA,A,B,C" />
+<img src="https://github-trophy.vercel.app/?username=keshavashiya&column=7&rank=SSS,SS,S,AAA,AA,A,B,C" />
 
 ## Use theme
 
