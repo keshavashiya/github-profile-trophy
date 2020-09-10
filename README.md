@@ -17,6 +17,14 @@
     <img src="https://img.shields.io/github/license/keshavashiya/github-profile-trophy"/> 
   </a>
 </p>
+<p align="center">
+  </a>
+    <a href="https://twitter.com/intent/tweet?text=Add%20dynamically%20generated%20GitHub%20Trophy%20on%20your%20readme%0D%0A&url=https%3A%2F%2Fgithub.com%2Fryo-ma%2Fgithub-profile-trophy">
+    <img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fryo-ma%2Fgithub-profile-trophy"/> 
+  </a>
+</p>
+
+
 
 # Quick Start
 
@@ -48,9 +56,9 @@ Ranks are `SSS` `SS` `S` `AAA` `AA` `A` `B` `C` `UNKNOWN` `SECRET`.
 
 |  Rank  |  Description  |
 | ---- | ---- |
-|  SSS, SS, S  | You are hard to reach the rank. You can brag.  |
+|  SSS, SS, S  | You are at a hard to reach rank. You can brag.  |
 |  AAA, AA, A  | You can reach the rank if you do your best. Let's aim here first.  |
-|  B, C  | You are a growing process.  |
+|  B, C  | You are in a growing process.  |
 | UNKOWN | You have not yet taken action. Let's act first. |
 | SECRET | The rank is very rare. The trophy will not be displayed until the conditions are met. |
 
@@ -109,7 +117,7 @@ https://github-trophy.vercel.app/?username=keshavashiya&rank=S
 
 <img width="110" src="https://user-images.githubusercontent.com/6661165/91642657-1cdd8780-ea68-11ea-994b-4568a55cd22a.png" />
 
-If You want to specify multiple ranks.
+If you want to specify multiple ranks.
 
 ```
 https://github-trophy.vercel.app/?username=keshavashiya&rank=S,AAA
@@ -145,9 +153,10 @@ Available themes.
 
 |  theme  |
 | ---- |
-| flat |
-| onedark |
-| gruvbox |
+| [flat](#flat) |
+| [onedark](#onedark) |
+| [gruvbox](#gruvbox) |
+| [dracula](#dracula) |
 
 ### flat
 
@@ -172,6 +181,15 @@ https://github-trophy.vercel.app/?username=keshavashiya&theme=gruvbox
 ```
 
 <img width="660" src="https://user-images.githubusercontent.com/6661165/92315152-e9c56600-f01c-11ea-9536-1bfbb158cfcb.png">
+
+### dracula
+
+```
+https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=dracula
+```
+
+<img width="660" src="https://user-images.githubusercontent.com/6661165/92490273-c91f2b00-f22b-11ea-9481-b5daae4d7bc3.png">
+
 
 # Contribution Guide
 
