@@ -116,6 +116,38 @@ export class MultipleLangTrophy extends Trophy{
   }
 }
 
+export class AllSuperRankTrophy extends Trophy{
+  constructor(score: number){
+    const rankConditions = [
+      new RankCondition(
+        RANK.SECRET,
+        "S Rank Hacker",
+        1,
+      ),
+    ];
+    super(score, rankConditions);
+    this.title = "AllSuperRank";
+    this.filterTitles = ["AllSuperRank"];
+    this.bottomMessage = "All S Rank"
+    this.hidden = true;
+  }
+}
+export class Joined2020Trophy extends Trophy{
+  constructor(score: number){
+    const rankConditions = [
+      new RankCondition(
+        RANK.SECRET,
+        "Everything started...",
+        1,
+      ),
+    ];
+    super(score, rankConditions);
+    this.title = "Joined2020";
+    this.filterTitles = ["Joined2020"];
+    this.bottomMessage = "Joined 2020"
+    this.hidden = true;
+  }
+}
 export class AncientAccountTrophy extends Trophy{
   constructor(score: number){
     const rankConditions = [

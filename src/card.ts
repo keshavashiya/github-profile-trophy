@@ -9,6 +9,8 @@ import {
   MultipleLangTrophy,
   LongTimeAccountTrophy,
   AncientAccountTrophy,
+  Joined2020Trophy,
+  AllSuperRankTrophy,
 } from "./trophies.ts";
 import { UserInfo } from "./github_api_client.ts";
 import { RANK_ORDER, RANK } from "./utils.ts";
@@ -32,6 +34,7 @@ export class Card {
     userInfo: UserInfo,
     theme: Theme,
   ): string {
+    // Base trophies
     let trophyList = new Array<Trophy>(
       new TotalStarTrophy(userInfo.totalStargazers),
       new TotalCommitTrophy(userInfo.totalCommits),
@@ -39,9 +42,16 @@ export class Card {
       new TotalIssueTrophy(userInfo.totalIssues),
       new TotalPullRequestTrophy(userInfo.totalPullRequests),
       new TotalRepositoryTrophy(userInfo.totalRepositories),
+    );
+    const isAllSRank =
+      trophyList.every((trophy) => trophy.rank.slice(0, 1) == RANK.S) ? 1 : 0;
+    // Secret trophies
+    trophyList.push(
       new MultipleLangTrophy(userInfo.languageCount),
       new LongTimeAccountTrophy(userInfo.durationYear),
       new AncientAccountTrophy(userInfo.acientAccount),
+      new Joined2020Trophy(userInfo.joined2020),
+      new AllSuperRankTrophy(isAllSRank),
     );
 
     // Filter by hidden
@@ -52,7 +62,7 @@ export class Card {
     // Filter by titles
     if (this.titles.length != 0) {
       trophyList = trophyList.filter((trophy) => {
-        return trophy.filterTitles.some((title) => this.titles.includes(title))
+        return trophy.filterTitles.some((title) => this.titles.includes(title));
       });
     }
 
