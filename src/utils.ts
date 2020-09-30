@@ -7,24 +7,26 @@ export class CustomURLSearchParams extends URLSearchParams {
     super(init);
   }
   getStringValue(key: string, defaultValue: string): string {
-    let value: string = defaultValue;
     if (super.has(key)) {
       const param = super.get(key);
       if (param !== null) {
         return param.toString();
       }
     }
-    return value.toString();
+    return defaultValue.toString();
   }
   getNumberValue(key: string, defaultValue: number): number {
-    let value: number = defaultValue;
     if (super.has(key)) {
       const param = super.get(key);
       if (param !== null) {
-        return parseInt(param);
+        const parsedValue = parseInt(param);
+        if (isNaN(parsedValue)) {
+          return defaultValue;
+        }
+        return parsedValue;
       }
     }
-    return value;
+    return defaultValue;
   }
 }
 
@@ -51,8 +53,8 @@ export const CONSTANTS = {
   DEFAULT_PANEL_SIZE: 110,
   DEFAULT_MAX_COLUMN: 6,
   DEFAULT_MAX_ROW: 3,
-  DEFAULT_PADDING_W: 0,
-  DEFAULT_PADDING_H: 0,
+  DEFAULT_MARGIN_W: 0,
+  DEFAULT_MARGIN_H: 0,
 };
 
 export enum RANK {
@@ -67,6 +69,5 @@ export enum RANK {
   C = "C",
   UNKNOWN = "?",
 }
-
 
 export const RANK_ORDER = Object.values(RANK);

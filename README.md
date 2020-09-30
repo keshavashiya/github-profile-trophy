@@ -94,6 +94,9 @@ Therefore, if you come up with interesting conditions, I am waiting for contribu
 * [column](#specify-the-maximum-row--column-size)
 * [row](#specify-the-maximum-row--column-size)
 * [theme](#apply-theme)
+* [margin-w](#margin-width)
+* [margin-h](#margin-height)
+
 
 ## Filter by titles
 
@@ -168,6 +171,9 @@ Available themes.
 | [onedark](#onedark) |
 | [gruvbox](#gruvbox) |
 | [dracula](#dracula) |
+| [monokai](#monokai) |
+| [chalk](#chalk) |
+| [nord](#nord) |
 
 ### flat
 
@@ -207,6 +213,72 @@ https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=dracula
 <p align="center">
   <img width="660" src="https://user-images.githubusercontent.com/6661165/92490273-c91f2b00-f22b-11ea-9481-b5daae4d7bc3.png">
 </p>
+
+### monokai
+
+```
+https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=monokai
+```
+
+<p align="center">
+  <img width="660" src="https://user-images.githubusercontent.com/6661165/93725426-2c289e80-fbea-11ea-96a4-f6490ccf2126.png">
+</p>
+
+### chalk
+
+```
+https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=chalk
+```
+
+<p align="center">
+  <img width="660" src="https://user-images.githubusercontent.com/6661165/94294003-1de7d300-ff9a-11ea-91d1-60417a4d919b.png">
+</p>
+
+### nord
+
+```
+https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=nord
+```
+
+<p align="center">
+  <img width="660" src="https://user-images.githubusercontent.com/6661165/94346857-7ab2be80-006a-11eb-9082-36d377ae2531.png">
+</p>
+
+
+## Margin Width
+
+You can put a margin in the width between trophies.  
+`Available value: number type`  
+`Default: margin-w=0`
+
+```
+https://github-profile-trophy.vercel.app/?username=ryo-ma&margin-w=15
+```
+
+<p align="center">
+  <img width="735" src="https://user-images.githubusercontent.com/6661165/93668661-e0ca9f00-fac8-11ea-9bec-325454f49fb4.png">
+</p>
+
+## Margin Height
+
+You can put a margin in the height between trophies.  
+`Available value: number type`  
+`Default: margin-h=0`
+
+```
+https://github-profile-trophy.vercel.app/?username=ryo-ma&margin-h=15
+```
+
+## Example layout
+
+```
+https://github-profile-trophy.vercel.app/?username=ryo-ma&column=3&margin-w=15&margin-h=15
+```
+
+<p align="center">
+  <img width="360" src="https://user-images.githubusercontent.com/6661165/93668677-ff309a80-fac8-11ea-8ae3-3e3e8adbef39.png">
+</p>
+
 
 # Contribution Guide
 
