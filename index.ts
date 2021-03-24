@@ -1,7 +1,7 @@
 import { ServerRequest } from "./deps.ts";
 import { GithubAPIClient } from "./src/github_api_client.ts";
 import { Card } from "./src/card.ts";
-import { parseParams, CONSTANTS } from "./src/utils.ts";
+import { CONSTANTS, parseParams } from "./src/utils.ts";
 import { COLORS, Theme } from "./src/theme.ts";
 import "https://deno.land/x/dotenv@v0.5.0/load.ts";
 
@@ -15,7 +15,7 @@ export default async (req: ServerRequest) => {
   const themeParam: string = params.getStringValue("theme", "default");
   let theme: Theme = COLORS.default;
   if (Object.keys(COLORS).includes(themeParam)) {
-    theme = COLORS[themeParam]
+    theme = COLORS[themeParam];
   }
   const marginWidth = params.getNumberValue(
     "margin-w",
@@ -24,6 +24,14 @@ export default async (req: ServerRequest) => {
   const paddingHeight = params.getNumberValue(
     "margin-h",
     CONSTANTS.DEFAULT_MARGIN_H,
+  );
+  const noBackground = params.getBooleanValue(
+    "no-bg",
+    CONSTANTS.DEFAULT_NO_BACKGROUND,
+  );
+  const noFrame = params.getBooleanValue(
+    "no-frame",
+    CONSTANTS.DEFAULT_NO_FRAME,
   );
   const titles: Array<string> = params.getAll("title").flatMap((r) =>
     r.split(",")
@@ -46,7 +54,7 @@ export default async (req: ServerRequest) => {
   if (userInfo === null) {
     req.respond(
       {
-        body: "Can not find a user",
+        body: "Can not find a user with userID: " + username,
         status: 404,
         headers: new Headers({ "Content-Type": "text" }),
       },
@@ -64,6 +72,8 @@ export default async (req: ServerRequest) => {
         CONSTANTS.DEFAULT_PANEL_SIZE,
         marginWidth,
         paddingHeight,
+        noBackground,
+        noFrame,
       ).render(userInfo, theme),
       headers: new Headers(
         {

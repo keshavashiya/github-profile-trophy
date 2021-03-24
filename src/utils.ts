@@ -28,14 +28,21 @@ export class CustomURLSearchParams extends URLSearchParams {
     }
     return defaultValue;
   }
+  getBooleanValue(key: string, defaultValue: boolean): boolean {
+    if (super.has(key)) {
+      const param = super.get(key);
+      return param !== null && param.toString() === 'true';
+    }
+    return defaultValue;
+  }
 }
 
 export function parseParams(req: ServerRequest): CustomURLSearchParams {
-  const splitedURL = req.url.split("?");
-  if (splitedURL.length < 2) {
+  const splittedURL = req.url.split("?");
+  if (splittedURL.length < 2) {
     return new CustomURLSearchParams();
   }
-  return new CustomURLSearchParams(splitedURL[1]);
+  return new CustomURLSearchParams(splittedURL[1]);
 }
 
 export function abridgeScore(score: number): string {
@@ -55,6 +62,8 @@ export const CONSTANTS = {
   DEFAULT_MAX_ROW: 3,
   DEFAULT_MARGIN_W: 0,
   DEFAULT_MARGIN_H: 0,
+  DEFAULT_NO_BACKGROUND: false,
+  DEFAULT_NO_FRAME: false,
 };
 
 export enum RANK {
