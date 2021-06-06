@@ -61,7 +61,7 @@ Ranks are `SSS` `SS` `S` `AAA` `AA` `A` `B` `C` `UNKNOWN` `SECRET`.
 |  SSS, SS, S  | You are at a hard to reach rank. You can brag.  |
 |  AAA, AA, A  | You can reach the rank if you do your best. Let's aim here first.  |
 |  B, C  | You are in a growing process.  |
-| UNKOWN | You have not yet taken action. Let's act first. |
+| UNKNOWN | You have not yet taken action. Let's act first. |
 | SECRET | The rank is very rare. The trophy will not be displayed until the conditions are met. |
 
 ## Secret Rank
@@ -179,6 +179,9 @@ Available themes.
 | [alduin](#alduin) |
 | [darkhub](#darkhub) |
 | [juicyfresh](#juicyfresh) |
+| [buddhism](#buddhism) |
+| [oldie](#oldie) |
+| [radical](#radical) |
 
 ### flat
 
@@ -280,6 +283,37 @@ https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=juicyfresh
   <img width="660" src="https://user-images.githubusercontent.com/6661165/104810094-edbc8c80-5835-11eb-8c20-a76192a00728.png">
 </p>
 
+### buddhism
+
+```
+https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=buddhism
+```
+
+<p align="center">
+  <img width="660" src="https://user-images.githubusercontent.com/6661165/113709167-2412f500-971d-11eb-9ee5-0ab292cf8b4c.png">
+</p>
+
+### oldie
+
+```
+https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=oldie
+```
+
+<p align="center">
+  <img width="660" src="https://user-images.githubusercontent.com/6661165/113709581-a0a5d380-971d-11eb-8583-770dc4091ebf.png">
+</p>
+
+### radical
+
+```
+https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=radical
+```
+
+<p align="center">
+  <img width="660" src="https://user-images.githubusercontent.com/6661165/116633521-adbc8800-a994-11eb-97c4-e45a32721491.png">
+</p>
+
+
 ## Margin Width
 
 You can put a margin in the width between trophies.  
@@ -349,8 +383,7 @@ https://github-profile-trophy.vercel.app/?username=ryo-ma&no-frame=true
 
 ## Environment
 
-* Deno >= v1.3.0
-* typescript == 3.9.7
+* Deno >= v1.9.2
 * [Vercel](https://vercel.com/)
 * GitHub API v4
 
